@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Swarna | UI Frontend Intern</title>
+
+  <!-- AOS Scroll Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Lightbox Gallery -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Sticky Header ===== -->
+  <header>
+    <h2>Swarna</h2>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle">🌙</button>
+  </header>
+
+  <!-- ===== Hero Section (Animated) ===== -->
+  <section class="hero">
+    <h1 class="hero-title">Hi, I'm <span>Swarna</span></h1>
+    <p class="hero-sub">UI / Frontend Developer Intern</p>
+    <a href="#contact" class="btn">Connect With Me</a>
+  </section>
+
+  <!-- ===== About Section ===== -->
+  <section id="about" class="about" data-aos="fade-up">
+    <img src="images/digi pic.jpg.jpeg" alt="Profile">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate UI and Frontend Developer who loves crafting
+      clean, interactive, and user-friendly web interfaces.
+    </p>
+
+    <div class="facts">
+      <span>🎓 B.Tech – 8.5 CGPA</span>
+      <span>💻 Web & UI Enthusiast</span>
+      <span>🚀 Learning React</span>
+    </div>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section id="skills" data-aos="fade-right">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>JavaScript</div>
+      <div>Java</div>
+      <div>Python</div>
+      <div>GitHub</div>
+    </div>
+  </section>
+
+  <!-- ===== Interactive Gallery ===== -->
+  <section id="gallery" data-aos="zoom-in">
+    <h2>Certifictions</h2>
+    <div class="gallery">
+      <a href="https://via.placeholder.com/600" data-lightbox="work">
+        <img src="images/eduskils Ai-ml cert pic.PNG">
+      </a>
+      <a href="https://via.placeholder.com/600" data-lightbox="work">
+        <img src="images/SI p3 certificate.PNG">
+      </a>
+      <a href="https://via.placeholder.com/600" data-lightbox="work">
+        <img src="images/223t1a0576 Certi-SmartInternz_page-0001.jpg.jpeg">
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <p>Email: kswarna2093@gmail.com</p><br>
+    <a href="#" class="btn">Download Resume</a>
+  </section>
+
+  <!-- ===== Scripts ===== -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    document.getElementById("themeToggle").onclick = () => {
+      document.body.classList.toggle("dark");
+    };
+  </script>+
+</body>
+</html>
